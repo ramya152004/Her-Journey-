@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hygiene - Her Journey</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff7fa;
+        color: #3d3036;
+      }
+      header.site-header {
+        background: white;
+        padding: 20px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d94f7c;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #3d3036;
+        font-size: 15px;
+      }
+      nav a:hover {
+        color: #d94f7c;
+      }
+      .dropdown {
+        position: relative;
+      }
+      .dropdown > a {
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background: white;
+        min-width: 190px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+      }
+      .dropdown-content a {
+        display: block;
+        padding: 13px 18px;
+      }
+      .dropdown-content a:hover {
+        background: #fff0f4;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      footer {
+        background: #35282e;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+      footer h2 {
+        color: #ffabc4;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 900px) {
+        header.site-header {
+          flex-direction: column;
+          gap: 20px;
+        }
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      .site-head {
+        text-align: center;
+        padding: 56px 24px 40px;
+      }
+      .site-head h1 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 40px);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: #3d3036;
+      }
+      .site-head p {
+        margin: 10px 0 0;
+        color: rgb(107, 98, 102);
+        font-size: 16px;
+      }
+
+      .pads {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 32px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px 64px;
+      }
+      .pad-card {
+        background: rgb(255, 255, 255);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+      }
+      .pad-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+      .pad-card .label {
+        padding: 16px 18px 20px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(46, 42, 44);
+        border-top: 3px solid rgb(240, 223, 225);
+      }
+      .pad-card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+      .b1 {
+        width: 265px;
+        height: 75px;
+        border-radius: 30px;
+        background-color: goldenrod;
+        border: none;
+        margin: 12px auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-family: inherit;
+        font-size: 15px;
+        color: #3d3036;
+      }
+      .pad-card-link:hover .b1 {
+        cursor: pointer;
+        filter: brightness(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">🌸 Her Journey</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#" onclick="return false;">Periods ▾</a>
+          <div class="dropdown-content">
+            <a href="cravings.html">Cravings</a>
+            <a href="hygiene.html">Hygiene</a>
+            <a href="mood-swings.html">Mood Swings</a>
+            <a href="Track-your-periods.html">Track Your Periods</a>
+          </div>
+        </div>
+
+        <!-- if we want drop down we can use them later -->
+        <!-- <div class="dropdown">
+          <a href="pcos.html">PCOS ▾</a>
+          <div class="dropdown-content">
+            <a href="pcos.html#pcod">PCOD</a>
+            <a href="pcos.html#thyroid">Thyroid</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="pregnancy.html">Pregnancy ▾</a>
+          <div class="dropdown-content">
+            <a href="pregnancy.html#nutrition">Pregnancy Nutrition</a>
+            <a href="pregnancy.html#prenatal">Prenatal Care</a>
+            <a href="pregnancy.html#changes">Pregnancy Changes</a>
+          </div>
+        </div> -->
+        <a href="pcos.html">Pcos</a>
+        <a href="pregnancy.html">Pregnancy</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <header class="site-head">
+      <h1>Sanitary Pads</h1>
+      <p>Comfort and protection, in every size.</p>
+    </header>
+
+    <div class="pads">
+      <a class="pad-card-link" href="https://share.google/gRno3YTOyLNuFBcaK">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQeWgXnpk2Zc7Neup0P3_h13andxeHSK9J9xFzM5XbuOgSO2g-lj7B-nBctBJE9fsNyO7yyEMS9JWji-LdzDZpu4qiGE5ol577unnHeK9B40udl0DFf0GanUg"
+            alt="Sanitary pad, style 1"
+          />
+          <div class="label">NUA</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+
+      <a class="pad-card-link" href="https://share.google/6j9jUOYh8uU6LYgOX">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRDxuYa7zN0ceC_6Me0oZzCYt11KtIgF9YyJNCjEhqkcUTpaXilFpxxzwOnrZLElCmWpYXnp_K19XAuJ2EGzpGg8d76imNMEDSVfWL0xE19TrvRqtQBuwUd1fw"
+            alt="Sanitary pad, style 2"
+          />
+          <div class="label">COMFORT ULTRA THIN PADS</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+
+      <a class="pad-card-link" href="https://share.google/AaEYA6wXB9r678SWs">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSC7G468FAWwEj2oZNVkaBjerVnx4c3t7h20aoiBXJOMQT6UMMnfaDJ6boC9znvsr3w8sczR4zjDvezpqeuAXCEqYcWEpBDyKy_R6guc3bBDTcEMVqb8wPQUQ"
+            alt="Sanitary pad, style 3"
+          />
+          <div class="label">CARMESI</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+
+      <a class="pad-card-link" href="https://share.google/IwtTPsf35MFLkM0W9">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYk1-mw1ux3F3CNlLjzwBMvzFKH29bbXuzmCZRCikk_hpZX6957txTEeYZCqOPUPR83YvfVpcO-3-457vzvDYntoVTvMLojJCqsr6AafUz_CLMxzpN64wjMw"
+            alt="Sanitary pad, style 4"
+          />
+          <div class="label">ORGANIC COTTON SANITORY PADS</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+
+      <a class="pad-card-link" href="https://share.google/o1jG88DrzF9SVz16c">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ79wyY4f2caEUUT_uE5sCq51wF86o4l8xaHooGURfIjDc3mdp8VrJLPA9kzK4qtOarlTRpXKUHEiJucso6EH4bULg3gtRY2TEXSF3foLSxX2qnl4x3Z2fodQ"
+            alt="Sanitary pad, style 5"
+          />
+          <div class="label">WHISPER</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+      <a class="pad-card-link" href="https://share.google/1C0pfg1uA0PnROEcR">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGyQU4CL-5LE2P0wncLnXUp7Dq1h9mF5GISisEHuP15vgULxVWobo_206v90Ohmneu9OYAHWp3TbotqLhGm3OyWo8KQwE7"
+            alt="Sanitary pad, style 6"
+          />
+          <div class="label">REUSABLE SANITORY PADS</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+      <a class="pad-card-link" href="https://share.google/ZZnhjQhKUfBJT4rCY">
+        <div class="pad-card">
+          <img
+            src="https://m.media-amazon.com/images/I/610v8z-+8GL.jpg"
+            alt="Sanitary pad, style 7"
+          />
+          <div class="label">CALIN</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+      <a class="pad-card-link" href="https://share.google/QqTZQgeuefZxyXkED">
+        <div class="pad-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQo1-RiRIEw-XHRCXoE9cUMyoUPXpLu2G-MvmVu-0Levm6KeW-66Y9KvE68UJ6byMFyxFKeU97bsuMtTJglKsck_0tMSsLcjkaVFyyVUEW17DARdd6UfqQTYQ"
+            alt="Sanitary pad, style 8"
+          />
+          <div class="label">HOTPACK</div>
+          <span class="b1">BUY NOW</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <h2>🌸 Her Journey</h2>
+      <p>From periods to parenthood, we're with you.</p>
+      <p>© 2026 Her Journey</p>
+    </footer>
+  </body>
+</html>

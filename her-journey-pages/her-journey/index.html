@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Her Journey - Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff7fa;
+        color: #3d3036;
+      }
+      header {
+        background: white;
+        padding: 20px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d94f7c;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #3d3036;
+        font-size: 15px;
+      }
+      nav a:hover {
+        color: #d94f7c;
+      }
+      .dropdown {
+        position: relative;
+      }
+      .dropdown > a {
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background: white;
+        min-width: 190px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+      }
+      .dropdown-content a {
+        display: block;
+        padding: 13px 18px;
+      }
+      .dropdown-content a:hover {
+        background: #fff0f4;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .hero {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        padding: 80px 8%;
+        background:
+          linear-gradient(rgba(255, 247, 250, 0.85), rgba(255, 247, 250, 0.7)),
+          url("https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-content {
+        max-width: 650px;
+      }
+      .hero small {
+        color: #d94f7c;
+        letter-spacing: 3px;
+        font-weight: bold;
+      }
+      .hero h1 {
+        font-size: 65px;
+        margin: 20px 0;
+      }
+      .hero h1 span {
+        color: #d94f7c;
+      }
+      .hero p {
+        font-size: 18px;
+        line-height: 1.8;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 14px 30px;
+        background: #d94f7c;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+      }
+      footer {
+        background: #35282e;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+      footer h2 {
+        color: #ffabc4;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 900px) {
+        header {
+          flex-direction: column;
+          gap: 20px;
+        }
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 43px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🌸 Her Journey</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <!-- <a href="periods.html">Periods ▾</a> -->
+          <a href="#" onclick="return false;">Periods ▾</a>
+          <div class="dropdown-content">
+            <a href="cravings.html">Cravings</a>
+            <a href="hygiene.html">Hygiene</a>
+            <a href="mood-swings.html">Mood Swings</a>
+            <a href="Track-your-periods.html">Track Your Periods</a>
+          </div>
+        </div>
+        <!-- <div class="dropdown"> -->
+        <!-- <a href="pcos.html">PCOS ▾</a> -->
+        <!-- <a href="#" onclick="return false;">PCOD ▾</a>
+          <div class="dropdown-content"> -->
+
+        <!-- <a href="pcos.html#pcod">PCOD</a>
+            <a href="pcos.html#thyroid">Thyroid</a> -->
+
+        <!-- if we want drop down we will use this
+            <a href="pcos.html">PCOS</a>
+            <a href="Thyroid.html">Thyroid</a>
+          </div>
+        </div> -->
+        <!-- <div class="dropdown"> -->
+        <!-- <a href="pregnancy.html">Pregnancy ▾</a> -->
+        <!-- <a href="#" onclick="return false;">pregnancy ▾</a> -->
+
+        <!-- <a href="pregnancy.html#nutrition">Pregnancy Nutrition</a>
+            <a href="pregnancy.html#prenatal">Prenatal Care</a>
+            <a href="pregnancy.html#changes">Pregnancy Changes</a> -->
+
+        <!-- if we want drop down we will use this  -->
+        <!-- <div class="dropdown-content"></div>
+            <a href="nutrition.html">Pregnancy Nutrition</a>
+            <a href="pregnancy.html">Pregnancy Care</a>
+            <a href="changes.html">Pregnancy Changes</a>
+          </div> -->
+        <!-- </div> -->
+        <a href="pcos.html">PCOS</a>
+        <a href="pregnancy.html">Pregnancy</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <small>WELCOME TO HER JOURNEY</small>
+        <h1>
+          Your Health.<br />
+          Your Journey.<br />
+          <span>Your Story.</span>
+        </h1>
+        <p>
+          A safe and informative space for women, from periods to PCOS,
+          pregnancy and beyond.
+        </p>
+        <!-- <a href="periods.html" class="btn"> Start Your Journey </a> -->
+      </div>
+    </section>
+    <footer>
+      <h2>🌸 Her Journey</h2>
+      <p>From periods to parenthood, we're with you.</p>
+      <p>© 2026 Her Journey</p>
+    </footer>
+  </body>
+</html>

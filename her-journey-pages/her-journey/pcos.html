@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Her Journey - PCOS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff7fa;
+        color: #3d3036;
+      }
+
+      header {
+        background: white;
+        padding: 20px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d94f7c;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #3d3036;
+        font-size: 15px;
+      }
+
+      nav a:hover {
+        color: #d94f7c;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        min-width: 190px;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .dropdown-content a {
+        display: block;
+        padding: 13px 18px;
+      }
+
+      .dropdown-content a:hover {
+        background: #fff0f4;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .banner {
+        padding: 90px 20px;
+        text-align: center;
+        background: #f2e5ff;
+      }
+
+      .banner h1 {
+        font-size: 50px;
+        color: #9a54b8;
+        margin: 15px;
+      }
+
+      .content {
+        max-width: 1100px;
+        margin: auto;
+        padding: 70px 20px;
+      }
+
+      .section {
+        background: white;
+        padding: 40px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+      }
+
+      .section h2 {
+        color: #9a54b8;
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .section p {
+        line-height: 1.8;
+        color: #6d5c63;
+      }
+
+      footer {
+        background: #35282e;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      footer h2 {
+        color: #ffabc4;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 900px) {
+        header {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .banner h1 {
+          font-size: 38px;
+        }
+
+        .section {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">🌸 Her Journey</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a href="periods.html">Periods ▾</a>
+          <div class="dropdown-content">
+            <a href="periods.html#cravings">Cravings</a>
+            <a href="periods.html#hygiene">Hygiene</a>
+            <a href="periods.html#mood-swings">Mood Swings</a>
+          </div>
+        </div>
+
+        <!-- <div class="dropdown"> -->
+        <!-- <a href="pcos.html">PCOS ▾</a> -->
+        <!-- <a href="#" onclick="return false;">PCOD ▾</a>
+          <div class="dropdown-content">
+            <a href="#pcod">PCOD</a>
+            <a href="#thyroid">Thyroid</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="pregnancy.html">Pregnancy ▾</a>
+          <div class="dropdown-content">
+            <a href="pregnancy.html#nutrition">Pregnancy Nutrition</a>
+            <a href="pregnancy.html#prenatal">Prenatal Care</a>
+            <a href="pregnancy.html#changes">Pregnancy Changes</a>
+          </div>
+        </div> -->
+        <a href="pcos.html">PCOS</a>
+
+        <a href="pregnancy.html">pregnancy</a>
+
+        <a href="community.html">Community</a>
+
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <p>HER JOURNEY • PCOS</p>
+
+      <h1>PCOS Awareness</h1>
+
+      <p>Understand your hormones and your health.</p>
+    </section>
+
+    <section class="content">
+      <div class="section">
+        <h2>🌸 PCOS</h2>
+
+        <p>
+          Polycystic ovary syndrome (PCOS) is a hormonal condition that can
+          affect menstrual cycles, ovulation and hormone levels. Symptoms can
+          vary from person to person.
+        </p>
+      </div>
+
+      <div class="section" id="pcod">
+        <h2>🌷 PCOD</h2>
+
+        <p>
+          PCOD is a term commonly used for hormonal and reproductive changes
+          involving irregular ovulation. Understanding symptoms and discussing
+          concerns with a healthcare professional can be helpful.
+        </p>
+      </div>
+
+      <div class="section" id="thyroid">
+        <h2>🦋 Thyroid</h2>
+
+        <p>
+          Thyroid hormones play an important role in the body. Changes in
+          thyroid function can sometimes affect menstrual cycles and overall
+          wellbeing. Appropriate testing and medical advice can help identify
+          thyroid problems.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <h2>🌸 Her Journey</h2>
+
+      <p>Women's Health Awareness</p>
+
+      <p>© 2026 Her Journey</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Her Journey - Pregnancy</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #fff7fa;
+        color: #4b4b4b;
+      }
+
+      /* ================= NAVBAR ================= */
+
+      .navbar {
+        height: 70px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 11%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #d94f7a;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logo span {
+        font-size: 25px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #d94f7a;
+      }
+
+      /* ================= HERO ================= */
+
+      .hero {
+        background-color: #ffe7dd;
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .hero-small {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        color: #d9684e;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      /* ================= MAIN CONTENT ================= */
+
+      .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 50px auto;
+      }
+
+      .section-card {
+        background-color: white;
+        padding: 32px;
+        margin-bottom: 25px;
+        border-radius: 18px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+      }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .section-title .icon {
+        font-size: 27px;
+      }
+
+      .section-title h2 {
+        color: #d9684e;
+        font-size: 25px;
+      }
+
+      .section-card p {
+        line-height: 1.8;
+        font-size: 15px;
+        color: #555;
+      }
+
+      /* ================= NUTRITION ================= */
+
+      .nutrition-list {
+        margin-top: 18px;
+        padding-left: 25px;
+      }
+
+      .nutrition-list li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+      }
+
+      /* ================= CHANGES ================= */
+
+      .changes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .change-box {
+        background-color: #fff3f5;
+        padding: 18px;
+        border-radius: 12px;
+      }
+
+      .change-box h3 {
+        color: #d94f7a;
+        margin-bottom: 8px;
+        font-size: 17px;
+      }
+
+      .change-box p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      /* ================= CARE SECTION ================= */
+
+      .care-list {
+        list-style: none;
+        margin-top: 20px;
+      }
+
+      .care-list li {
+        padding: 15px;
+        margin-bottom: 12px;
+        background-color: #fff5f7;
+        border-left: 4px solid #d94f7a;
+        border-radius: 8px;
+        line-height: 1.6;
+      }
+
+      .care-list li strong {
+        color: #d94f7a;
+      }
+
+      /* ================= AVOID ================= */
+
+      .avoid {
+        background-color: #fff0ed;
+        border-left: 5px solid #e56b52;
+      }
+
+      .avoid ul {
+        margin-top: 15px;
+        padding-left: 25px;
+      }
+
+      .avoid li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+
+      /* ================= IMPORTANT NOTE ================= */
+
+      .note {
+        background-color: #fff1f4;
+        border: 1px solid #f3c5d0;
+        padding: 22px;
+        border-radius: 14px;
+        margin-top: 20px;
+      }
+
+      .note h3 {
+        color: #c9436d;
+        margin-bottom: 10px;
+      }
+
+      .note p {
+        font-size: 14px;
+      }
+
+      /* ================= FOOTER ================= */
+
+      footer {
+        background-color: #d94f7a;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 60px;
+      }
+
+      footer p {
+        font-size: 14px;
+      }
+
+      /* ================= RESPONSIVE ================= */
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 0 20px;
+        }
+
+        .nav-links {
+          gap: 12px;
+        }
+
+        .nav-links a {
+          font-size: 12px;
+        }
+
+        .hero h1 {
+          font-size: 30px;
+        }
+
+        .container {
+          width: 90%;
+        }
+
+        .changes-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-card {
+          padding: 22px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .navbar {
+          height: auto;
+          padding: 15px;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hero {
+          padding: 50px 15px;
+        }
+
+        .hero h1 {
+          font-size: 27px;
+        }
+
+        .section-title h2 {
+          font-size: 21px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <span>🌸</span>
+        Her Journey
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="periods.html">Periods ▾</a></li>
+        <li><a href="pcos.html">PCOS ▾</a></li>
+        <li><a href="pregnancy.html">Pregnancy ▾</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="hero-small">HER JOURNEY • PREGNANCY</div>
+
+      <h1>Your Pregnancy Journey</h1>
+
+      <p>Information and support through every stage of pregnancy.</p>
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+
+    <main class="container">
+      <!-- Pregnancy Nutrition -->
+
+      <section class="section-card">
+        <div class="section-title">
+          <div class="icon">🥗</div>
+          <h2>Pregnancy Nutrition</h2>
+        </div>
+
+        <p>
+          Good nutrition during pregnancy supports the health of the mother and
+          the developing baby. A balanced diet should provide essential
+          nutrients, vitamins and minerals throughout pregnancy.
+        </p>
+
+        <ul class="nutrition-list">
+          <li>
+            <strong>🥬 Fruits and vegetables:</strong>
+            Include a variety of colorful fruits and vegetables.
+          </li>
+
+          <li>
+            <strong>🌾 Whole grains:</strong>
+            Choose foods such as oats, brown rice and whole-grain bread.
+          </li>
+
+          <li>
+            <strong>🥚 Protein:</strong>
+            Include eggs, beans, lentils, nuts and well-cooked lean meats.
+          </li>
+
+          <li>
+            <strong>🥛 Calcium:</strong>
+            Milk, yogurt and other calcium-rich foods can support healthy bones
+            and teeth.
+          </li>
+
+          <li>
+            <strong>💧 Stay hydrated:</strong>
+            Drink enough water throughout the day.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Pregnancy Changes -->
+
+      <section class="section-card">
+        <div class="section-title">
+          <div class="icon">🤰</div>
+          <h2>Pregnancy Changes</h2>
+        </div>
+
+        <p>
+          Pregnancy brings many physical and emotional changes. These changes
+          can vary from person to person and may change as pregnancy progresses.
+        </p>
+
+        <div class="changes-grid">
+          <div class="change-box">
+            <h3>🌸 First Trimester</h3>
+            <p>
+              Fatigue, nausea, breast tenderness and increased urination are
+              common changes.
+            </p>
+          </div>
+
+          <div class="change-box">
+            <h3>🌷 Second Trimester</h3>
+            <p>
+              Energy may improve, the abdomen grows and the baby begins to move.
+            </p>
+          </div>
+
+          <div class="change-box">
+            <h3>🌺 Third Trimester</h3>
+            <p>
+              Increased body size, back discomfort, tiredness and preparation
+              for birth may occur.
+            </p>
+          </div>
+
+          <div class="change-box">
+            <h3>💗 Emotional Changes</h3>
+            <p>
+              Mood changes and different emotions can occur because of hormonal
+              and lifestyle changes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prenatal Care -->
+
+      <section class="section-card">
+        <div class="section-title">
+          <div class="icon">🩺</div>
+          <h2>Prenatal Care</h2>
+        </div>
+
+        <p>
+          Regular prenatal care helps monitor the health of both the mother and
+          baby. Healthcare professionals can provide appropriate guidance
+          throughout pregnancy.
+        </p>
+
+        <ul class="care-list">
+          <li>
+            <strong>Regular checkups:</strong>
+            Attend appointments recommended by your healthcare provider.
+          </li>
+
+          <li>
+            <strong>Take prescribed supplements:</strong>
+            Take prenatal vitamins or supplements only as recommended by your
+            healthcare professional.
+          </li>
+
+          <li>
+            <strong>Monitor your health:</strong>
+            Keep track of important changes and discuss concerns during
+            appointments.
+          </li>
+
+          <li>
+            <strong>Ask questions:</strong>
+            Talk openly with your healthcare provider about symptoms, nutrition,
+            exercise and medicines.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Care During Pregnancy -->
+
+      <section class="section-card">
+        <div class="section-title">
+          <div class="icon">❤️</div>
+          <h2>Care During Pregnancy</h2>
+        </div>
+
+        <p>
+          Taking care of your physical and emotional well-being is important
+          during pregnancy.
+        </p>
+
+        <ul class="care-list">
+          <li>
+            <strong>🥗 Eat balanced meals:</strong>
+            Choose a variety of nutritious foods.
+          </li>
+
+          <li>
+            <strong>🚶 Stay active:</strong>
+            Follow your healthcare provider's advice about safe physical
+            activity.
+          </li>
+
+          <li>
+            <strong>😴 Get enough rest:</strong>
+            Give your body time to rest and recover.
+          </li>
+
+          <li>
+            <strong>🧘 Manage stress:</strong>
+            Relaxation, gentle activities and emotional support can help you
+            feel better.
+          </li>
+
+          <li>
+            <strong>💧 Drink water:</strong>
+            Keep yourself hydrated throughout the day.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Things to Avoid -->
+
+      <section class="section-card avoid">
+        <div class="section-title">
+          <div class="icon">⚠️</div>
+          <h2>Things to Avoid</h2>
+        </div>
+
+        <p>
+          Some substances and activities can be harmful during pregnancy. Always
+          ask your healthcare provider if you are unsure about something.
+        </p>
+
+        <ul>
+          <li>Avoid alcohol and smoking.</li>
+          <li>
+            Do not use medicines or supplements without professional advice.
+          </li>
+          <li>
+            Avoid foods that your healthcare provider has advised you to avoid.
+          </li>
+          <li>Follow safety recommendations for physical activities.</li>
+        </ul>
+      </section>
+
+      <!-- Important Note -->
+
+      <div class="note">
+        <h3>💗 Remember</h3>
+
+        <p>
+          Every pregnancy is different. The information on this page is for
+          general awareness and should not replace advice from a qualified
+          healthcare professional. If you have concerns about your pregnancy or
+          symptoms that worry you, contact your healthcare provider.
+        </p>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>
+        © 2026 Her Journey | Supporting women through every stage of life 🌸
+      </p>
+    </footer>
+  </body>
+</html>

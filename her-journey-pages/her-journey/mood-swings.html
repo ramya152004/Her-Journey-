@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Swings - Her Journey</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff7fa;
+        color: #3d3036;
+      }
+      header.site-header {
+        background: white;
+        padding: 20px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d94f7c;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #3d3036;
+        font-size: 15px;
+      }
+      nav a:hover {
+        color: #d94f7c;
+      }
+      .dropdown {
+        position: relative;
+      }
+      .dropdown > a {
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background: white;
+        min-width: 190px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+      }
+      .dropdown-content a {
+        display: block;
+        padding: 13px 18px;
+      }
+      .dropdown-content a:hover {
+        background: #fff0f4;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      footer {
+        background: #35282e;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+      footer h2 {
+        color: #ffabc4;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 900px) {
+        header.site-header {
+          flex-direction: column;
+          gap: 20px;
+        }
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      .page-head {
+        text-align: center;
+        padding: 56px 24px 40px;
+      }
+      .page-head h1 {
+        margin: 0;
+        font-size: clamp(26px, 4vw, 36px);
+        font-weight: 600;
+        color: #3d3036;
+      }
+      .page-head p {
+        margin: 10px auto 0;
+        max-width: 480px;
+        color: rgb(107, 98, 102);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .topic {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        padding: 24px;
+        background: rgb(255, 255, 255);
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+      .topic.reverse {
+        flex-direction: row-reverse;
+      }
+      .topic img {
+        width: 260px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+      .topic .content h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(122, 140, 122);
+      }
+      .topic .content p {
+        margin: 0;
+        max-width: 60ch;
+        line-height: 1.7;
+        color: rgb(46, 42, 44);
+      }
+
+      @media (max-width: 700px) {
+        .topic,
+        .topic.reverse {
+          flex-direction: column;
+        }
+        .topic img {
+          width: 100%;
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">🌸 Her Journey</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <!-- <a href="periods.html">Periods ▾</a> -->
+          <a href="#" onclick="return false;">Periods ▾</a>
+          <div class="dropdown-content">
+            <a href="cravings.html">Cravings</a>
+            <a href="hygiene.html">Hygiene</a>
+            <a href="mood-swings.html">Mood Swings</a>
+            <a href="Track-your-periods.html">Track Your Periods</a>
+          </div>
+        </div>
+        <!-- if we want drop down we can use them later -->
+        <!-- <div class="dropdown">
+          <a href="pcos.html">PCOS ▾</a>
+          <div class="dropdown-content">
+            <a href="pcos.html#pcod">PCOD</a>
+            <a href="pcos.html#thyroid">Thyroid</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="pregnancy.html">Pregnancy ▾</a>
+          <div class="dropdown-content">
+            <a href="pregnancy.html#nutrition">Pregnancy Nutrition</a>
+            <a href="pregnancy.html#prenatal">Prenatal Care</a>
+            <a href="pregnancy.html#changes">Pregnancy Changes</a>
+          </div>
+        </div> -->
+        <a href="pcos.html">Pcos</a>
+        <a href="pregnancy.html">Pregnancy</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <header class="page-head">
+      <h1>Understanding Mood Swings</h1>
+      <p>Simple, everyday things that can help during your cycle.</p>
+    </header>
+
+    <section class="topic">
+      <img src="./sleep1.webp" alt="Person resting comfortably in bed" />
+      <div class="content">
+        <h2>Rest &amp; Sleep</h2>
+        <p>
+          Tiredness makes mood swings harder to manage. Try to keep a regular
+          sleep schedule and give yourself permission to rest more than usual
+          during your cycle.
+        </p>
+      </div>
+    </section>
+
+    <section class="topic reverse">
+      <img src="./diet.webp" alt="Glass of water and fresh fruit" />
+      <div class="content">
+        <h2>Diet &amp; Hydration</h2>
+        <p>
+          Staying hydrated and eating balanced meals can ease both physical
+          discomfort and emotional ups and downs. Small, regular meals often
+          help more than skipping and overeating.
+        </p>
+      </div>
+    </section>
+
+    <section class="topic">
+      <img src="./exercise.webp" alt="Person stretching on a yoga mat" />
+      <div class="content">
+        <h2>Exercise &amp; Movement</h2>
+        <p>
+          Light movement, like walking or stretching, can lift mood and ease
+          tension. It doesn't need to be intense, even a short walk outside can
+          help.
+        </p>
+      </div>
+    </section>
+
+    <section class="topic reverse">
+      <img src="./comfort.webp" alt="Warm compress being used for comfort" />
+      <div class="content">
+        <h2>Warmth &amp; Comfort</h2>
+        <p>
+          A warm compress or heating pad can ease cramps, and less physical pain
+          often means steadier mood through the day.
+        </p>
+      </div>
+    </section>
+
+    <section class="topic">
+      <img src="./emotional.webp" alt="Two people talking supportively" />
+      <div class="content">
+        <h2>Emotional Support</h2>
+        <p>
+          Talking to someone you trust on a harder day can make a real
+          difference. You don't have to manage everything alone.
+        </p>
+      </div>
+    </section>
+
+    <section class="topic reverse">
+      <img src="./doctor.webp" alt="Calm clinical setting" />
+      <div class="content">
+        <h2>When to See a Doctor</h2>
+        <p>
+          If mood swings feel severe, last most of the month, or affect daily
+          life, it's worth speaking with a doctor about it rather than managing
+          alone.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <h2>🌸 Her Journey</h2>
+      <p>From periods to parenthood, we're with you.</p>
+      <p>© 2026 Her Journey</p>
+    </footer>
+  </body>
+</html>
