@@ -22,19 +22,18 @@
       /* ================= NAVBAR ================= */
 
       .navbar {
-        height: 70px;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 11%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        padding: 20px 6%;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
       }
 
       .logo {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
-        color: #d94f7a;
+        color: #d94f7c;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -52,13 +51,42 @@
 
       .nav-links a {
         text-decoration: none;
-        color: #444;
-        font-size: 14px;
+        color: #3d3036;
+        font-size: 15px;
         transition: 0.3s;
       }
 
       .nav-links a:hover {
-        color: #d94f7a;
+        color: #d94f7c;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+      .dropdown > a {
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background: white;
+        min-width: 190px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+      }
+      .dropdown-content a {
+        display: block;
+        padding: 13px 18px;
+      }
+      .dropdown-content a:hover {
+        background: #fff0f4;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
 
       /* ================= HERO ================= */
@@ -222,11 +250,16 @@
       /* ================= FOOTER ================= */
 
       footer {
-        background-color: #d94f7a;
+        background-color: #35282e;
         color: white;
         text-align: center;
-        padding: 25px;
+        padding: 40px;
         margin-top: 60px;
+      }
+
+      footer h2 {
+        color: #ffabc4;
+        margin-bottom: 10px;
       }
 
       footer p {
@@ -304,9 +337,17 @@
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="periods.html">Periods ▾</a></li>
-        <li><a href="pcos.html">PCOS ▾</a></li>
-        <li><a href="pregnancy.html">Pregnancy ▾</a></li>
+        <li class="dropdown">
+          <a href="#" onclick="return false;">Periods ▾</a>
+          <div class="dropdown-content">
+            <a href="cravings.html">Cravings</a>
+            <a href="hygiene.html">Hygiene</a>
+            <a href="mood-swings.html">Mood Swings</a>
+            <a href="Track-your-periods.html">Track Your Periods</a>
+          </div>
+        </li>
+        <li><a href="pcos.html">PCOS</a></li>
+        <li><a href="pregnancy.html">Pregnancy</a></li>
         <li><a href="community.html">Community</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -540,6 +581,7 @@
     <!-- ================= FOOTER ================= -->
 
     <footer>
+      <h2>🌸 Her Journey</h2>
       <p>
         © 2026 Her Journey | Supporting women through every stage of life 🌸
       </p>
